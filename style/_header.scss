@@ -1,0 +1,102 @@
+body{
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    height: 8vh;
+    top: 0;
+    z-index: 10;
+    padding: 0.2% 5vw;
+    background-color: $color_8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        .menu {
+            ul {
+                /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
+                width: 100%;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                overflow: hidden;
+                list-style: none;
+                height: 0px;
+                background-color: $color_8;
+    
+                li {
+                    position: relative;
+    
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        color: $color_4;
+                        padding: 15px 5%;
+                        line-height: 28px;
+                        display: block;
+                        font-size: 16px;
+                        letter-spacing: 0;
+                    }
+                } 
+    
+                li:hover {
+                    background: $color_7;
+                } 
+            }
+
+            input[type="checkbox"]:checked ~ ul {
+                height: 55vh;
+                .sections{
+                    display: block;
+                }
+            }
+
+            /*checkbox transparente y en primer plano*/
+            input {
+                display: block;
+                width: 40px;
+                height: 32px;
+                opacity: 0;
+                z-index: 2;
+                position: absolute;
+            }
+
+            /*span -lineas del menu hamburguesa-*/
+            span {
+                display: block;
+                width: 25px;
+                height: 2.5px;
+                margin-bottom: 6.5px;
+                position: relative;
+                background: #000;
+                z-index: 1;
+                transform-origin: 3px 0px;
+            }
+
+            span:first-child {
+                transform-origin: 0% 0%;
+            }
+
+            span:nth-last-child(2) {
+                transform-origin: 0% 100%;
+            }
+
+            /*movimiento a cruz*/
+            input:checked ~ span {
+                opacity: 1;
+                transform: rotate(45deg) translate(2px, 1px);
+            }
+
+            input:checked ~ span:nth-last-child(3) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+            input:checked ~ span:nth-last-child(2) {
+                transform: rotate(-45deg) translate(1px, 0px);
+            }
+        }  
+    }
+}

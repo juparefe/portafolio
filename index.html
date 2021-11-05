@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/8f7e77515a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <title>Portfolio Juan Pablo Rendon</title>
+</head>
+<body>
+    <header>
+        <i>Juan Pablo Rendon</i>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="sections">
+                    <li><a href="#home_id">HOME</a></li>
+                    <li><a href="#about_id">QUIEN SOY</a></li>
+                    <li><a href="#skills_id">HABILIDADES</a></li>
+                    <li><a href="#projects_id">PROYECTOS</a></li>
+                    <li><a href="#contact_id">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--===== HOME =====-->
+        <section id="home_id" class="home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="100,0 0,70 0,0"/>
+            </svg>
+            <div class="home_data">
+                <h1 class="home_title">Hola,<br>Soy <span class="home__title-color">Juan Pablo</span><br> Desarrollador Web Junior</h1>
+                <a href="#contact_id" class="button">Contacto</a>
+            </div>
+            <div class="home_img">    
+                <div class="img_container">
+                    <img src="assets/Foto jp.jpeg" alt="Foto">
+                </div> 
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section id="about_id" class="about">
+            <svg class="svg_about" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="white" d="M26.6,-50.3C32.3,-42.8,33.1,-31.2,40.3,-22.1C47.4,-13.1,60.9,-6.5,68,4.1C75.2,14.8,76,29.6,66.8,35.1C57.6,40.7,38.4,37,25.6,37.9C12.8,38.7,6.4,44.2,-4.3,51.7C-15.1,59.2,-30.2,68.8,-38.5,65.3C-46.7,61.8,-48.2,45.3,-55.8,32.2C-63.4,19.1,-77.1,9.6,-78.7,-0.9C-80.4,-11.4,-69.9,-22.9,-60.4,-32.7C-51,-42.5,-42.4,-50.6,-32.5,-55.6C-22.6,-60.7,-11.3,-62.7,-0.4,-62C10.5,-61.3,20.9,-57.8,26.6,-50.3Z" transform="translate(100 100)" />
+            </svg>
+            <div class="container_about">
+                <h2>¿Quien soy?</h2>
+                <p>Mi nombre es Juan Pablo Rendon y soy de Colombia, 😄<br> 
+                   Soy un Desarrollador web Front-End con habilidades para la gestión de proyectos y el desarrollo de sitios y aplicaciones web con HTML, CSS, SASS y JavaScript, además del uso de frameworks como Bootstrap y REACT. Con conocimientos en Java, R y en bases de datos relacionales y no relacionales como MySQL y MongoDB. <br> 
+                   Me caracterizo por mi capacidad para resolver problemas creativamente, así como para trabajar en equipos remotos y el aprendizaje continuo. <br>
+                   Creo firmemente en que la única forma de acelerar el progreso de Colombia es empleando la tecnología al servicio de toda la cadena de producción y transformación, para poder aprovechar el potencial de convertirse en una despensa agrícola. <br>
+                   Para mostrales un poco porque creo esto, quiero que observen algunas frases celebres sobre el desarrollo web: </p>
+                   <div class="container_phrases">
+                        <h3>Slider de Frases</h3>
+                        <p>Mira algunas frases celebres sobre desarrollo web</p>
+                        <div class="slider">
+                            <button id="btn-down" class="btn_phrases"><i class="fas fa-backward"></i></button>    
+                            <div id="phrases" class="phrases">
+                                <div class="card_phrase">
+                                    <h4>“Un diseñador sabe que ha alcanzado la perfección no cuando no queda nada que agregar, sino cuando no queda nada para quitar”</h4>
+                                    <p>Antoine de Saint-Exupéry</p>
+                                </div>
+                                <div class="card_phrase">
+                                    <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
+                                    <p>Neville Brody</p>
+                                </div>
+                                <div class="card_phrase">
+                                    <h4>“Aprender HTML y CSS es mucho más desafiante de lo que solía ser. El diseño web receptivo agrega más capas de complejidad para diseñar y desarrollar sitios web.”</h4>
+                                    <p>Jacob Lett</p>
+                                </div>
+                                <div class="card_phrase">
+                                    <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
+                                    <p>Neville Brody</p>
+                                </div>
+                                <div class="card_phrase">
+                                    <h4>“Escribir el primer 90% de un programa de computadora toma el 90% del tiempo. El 10% restante también toma el 90% del tiempo y los toques finales también toman el 90% del tiempo.”</h4>
+                                    <p>N.J. Rubenking</p>
+                                </div>
+                            </div>    
+                            <button id="btn-up" class="btn_phrases"><i class="fas fa-forward"></i></button> 
+                        </div>
+                   </div>
+                   <p>🌱 Estoy muy interesado en aprender y crecer como profesional y como persona todos los días y me gusta escuchar a gente interesante y creativa que puede aportar algo a mi crecimiento integral como persona, así que no dudes en ponerte en contacto conmigo si deseas conectar.</p>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section id="skills_id" class="skills">
+            <h2>Habilidades Tecnicas</h2>
+            <p>A continuacion puedes observar mas a profundidad cuales son mis habilidades tecnicas y mi nivel en cada una de ellas:</p>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fab fa-html5 skills__icon"></i>
+                    <span class="skills__name">HTML</span>
+                </div>
+                <div class="skills__bar skills__html"></div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fab fa-css3 skills__icon"></i>
+                    <span class="skills__name">CSS</span>
+                </div>
+                <div class="skills__bar skills__css"></div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fab fa-js skills__icon"></i>
+                    <span class="skills__name">JavaScript</span>
+                </div>
+                <div class="skills__bar skills__javascript"></div>
+                <div>
+                    <span class="skills__percentage">75%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fas fa-database skills__icon"></i>
+                    <span class="skills__name">SQL</span>
+                </div>
+                <div class="skills__bar skills__sql"></div>
+                <div>
+                    <span class="skills__percentage">65%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fab fa-node-js skills__icon"></i>
+                    <span class="skills__name">Node</span>
+                </div>
+                <div class="skills__bar skills__react"></div>
+                <div>
+                    <span class="skills__percentage">60%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fab fa-react skills__icon"></i>
+                    <span class="skills__name">React</span>
+                </div>
+                <div class="skills__bar skills__react"></div>
+                <div>
+                    <span class="skills__percentage">50%</span>
+                </div>
+            </div>
+        </section>
+
+        <!--===== PROJECTS =====-->
+        <section id="projects_id" class="projects">
+            <h2>Proyectos:</h2>
+            <div class="container_cards">
+                <div class="card">
+                    <img src="assets/podcast-channel.jpg" alt="Proyecto 1">
+                    <div class="container" style="display: none;">
+                      <h3><b>Podcast Channel</b></h3>
+                      <p>Maquetación del Landing Page de un Podcast Channel utilizando los lenguajes HTML y CSS, haciendo uso del preprocesador SASS y desarrollando funcionalidades de reproducción de contenidos, navegación, compatibilidad con múltiples exploradores y dispositivos.</p>
+                      <ul>
+                        <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-css3"></i></a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-sass"></i></a></li>
+                      </ul>
+                      <a class="btn_projects" href="https://landing-page-podcast-channel-acamica.000webhostapp.com/" target="_blank" rel="noopener noreferrer">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/proyecto-gifos.jpg" id="gifos_img" alt="Proyecto 2">
+                    <div class="container" style="display: none;">
+                      <h3><b>Proyecto Gifos</b></h3>
+                      <p>Desarrollo de una aplicación web interactiva que permite la búsqueda, descarga y creación de GIFS mediante la obtención de datos de la API remota de Giphy, utilizando los lenguajes HTML, CSS y JavaScript, haciendo uso del preprocesador SASS, y trabajando con asincronismo y el uso de herramientas nativas del explorador como la obtención de imágenes a través de la webcam.</p>
+                      <ul>
+                        <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-js"></i></a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-css3"></i></a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-sass"></i></a></li>
+                      </ul>
+                      <a class="btn_projects" href="https://proyecto-gifos-acamica.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/delilah-resto.jpg" alt="Proyecto 3" style="width:100%">
+                    <div class="container" style="display: none;">
+                      <h3><b>Delilah Resto API</b></h3>
+                      <p>Desarrollo de una API que controla el sistema de pedidos online para un restaurante utilizando el lenguaje JavaScript, haciendo uso del entorno de ejecución Node.js, el framework Express.js y un sistema de bases de datos relacionales con SQL. Desarrollando funcionalidades que permitan realizar altas, bajas, modificaciones y obtención de información sobre una estructura de datos que podría consumir un cliente.</p>
+                      <ul>
+                        <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-js"></i></a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-node-js"></i></a></li>
+                      </ul>
+                      <a class="btn_projects" href="https://github.com/juparefe/Delilah-Resto" target="_blank" rel="noopener noreferrer">Ver Mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--===== CONTACT =====-->
+        <section id="contact_id" class="contact">
+            <h2>Contacto:</h2>
+            <div class="cv_container">
+                <h3>Este es mi CV <i class="fas fa-file-pdf"></i>:</h3>
+                <a href="https://drive.google.com/drive/my-drive?hl=es">CV</a>
+            </div>
+            <div class="linked_container">
+                <h3>Este es mi perfil de LinkedIn <i class="fab fa-linkedin"></i>:</h3>
+                <a href="https://www.linkedin.com/in/juan-pablo-rendon/">LinkedIn</a>
+            </div>
+            <div class="github_container">
+                <h3>Este es mi repositorio de GitHub <i class="fab fa-github-square"></i>:</h3> 
+                <a href="https://github.com/juparefe">GitHub</a>
+            </div>
+            <div class="switch_container">
+                <h3>¿Deseas dejar un mensaje?:</h3>
+                
+                <div class="switch-button">
+                    <label>No, gracias</label>
+                    <!-- Checkbox -->
+                    <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                    <!-- Botón -->
+                    <label for="switch-label" class="switch-button__label"></label>
+                    <label>Si, porfavor</label>
+                </div>
+            </div>         
+            <form class="form" action="submit" style="display: none;">
+                <p>Formulario de contacto</p>
+                <label for="">
+                    Sexo:
+                    <input type="radio" name="sex" value="h" class="input_radio">Hombre
+                    <input type="radio" name="sex" value="w" class="input_radio">Mujer
+                    <input type="radio" name="sex" value="n" class="input_radio">Prefiero no decirlo
+                </label>
+                <label for="">
+                    Nombre Completo:
+                    <input type="text" class="input_text">
+                </label>
+                <label for="">
+                    Pais:
+                    <input type="text" class="input_text">
+                </label>
+                <label for="">
+                    Email:
+                    <input type="email" class="input_text">
+                </label>
+                <label for="">
+                    Mensaje:
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Write something here"></textarea>
+                </label>
+                <div class="div_btn">
+                    <input type="submit" class="btn_form">
+                    <input type="reset" class="btn_form">
+                </div>
+            </form>
+        </section>
+
+        <button class="btn_night">
+            <i class="fas fa-moon icon_swap"></i>
+        </button>
+        <button class="btn_language">
+            <i class="fas fa-language icon_swap"></i>
+        </button>
+    </main>
+    <footer>
+        <p>© 2021 — Juan Pablo Rendon</p>
+    </footer>
+</body>
+</html>
