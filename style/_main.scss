@@ -7,7 +7,7 @@ main{
     margin-top: 8vh;
 
     section{
-        padding: 12vh 2vw 0 2vw;
+        padding: 10vh 2vw 0 2vw;
     }
 
     h2{
@@ -84,31 +84,31 @@ main{
 
             .container_phrases{
                 .slider{
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    .btn_phrases{
-                        height: 5vw;
-                        width: 5vw;
-                    }
-                    .phrases{
+                    height: 50vh;
+                    display: inline-flex;
+                    overflow: hidden;
+                    transform: translateX(0);
+                    transition: transform(0.3s ease-out);
+                    cursor: grab;
+                    
+                    .card_phrase{
+                        max-height: 50vh;
+                        width: 25vw;
                         display: flex;
-                        flex-flow: row nowrap;
-                        overflow: hidden;
-                        
-                        .card_phrase{
-                            display: flex;
-                            flex-flow: column wrap;
-                            width: 25vw;
-                            border: 1px dotted $color_dark;
-                            border-radius: 1vw;
-                            padding: 1vw;
-                            margin: 1vw;
-                            justify-content: center;
-                            align-items: center;
-                        }
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1rem;
+                        user-select: none;
+                        transition: transform(0.3s ease-out);
+                    }
+                }
+
+                .grabbing{
+                    cursor: grabbing;
+
+                    .card_phrase{
+                        transform: scale(0.9);
                     }
                 }
             }
@@ -326,6 +326,9 @@ main{
         position: fixed;
         right: 5vw;
         bottom: 3vh;
+        img{
+            padding: 5px;
+        }
     }
 
     .btn_language{
@@ -336,6 +339,9 @@ main{
         position: fixed;
         right: 15vw;
         bottom: 3vh;
+        img{
+            padding: 5px;
+        }
     }
 
     .icon_swap{

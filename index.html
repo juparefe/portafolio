@@ -6,27 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/8f7e77515a.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>Portfolio Juan Pablo Rendon</title>
 </head>
 <body>
     <header>
         <i>Juan Pablo Rendon</i>
         <nav>
-            <div class="menu">
-                <input type="checkbox" id="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="sections">
-                    <li><a href="#home_id">HOME</a></li>
-                    <li><a href="#about_id">QUIEN SOY</a></li>
-                    <li><a href="#skills_id">HABILIDADES</a></li>
-                    <li><a href="#projects_id">PROYECTOS</a></li>
-                    <li><a href="#contact_id">CONTACTO</a></li>
-                </ul>
-            </div>
+            <ul class="menu">
+                <li class="item_menu"><a href="#home_id">HOME</a></li>
+                <li class="item_menu"><a href="#about_id">QUIEN SOY</a></li>
+                <li class="item_menu"><a href="#skills_id">HABILIDADES</a></li>
+                <li class="item_menu"><a href="#projects_id">PROYECTOS</a></li>
+                <li class="item_menu"><a href="#contact_id">CONTACTO</a></li>
+            </ul>
         </nav>
+        <button class="btn_menu" id="btn_menu">
+            <img class="img_menu" id="img_menu" src="./assets/bars-solid.svg" alt="menu">
+        </button>
     </header>
     <main>
         <!--===== HOME =====-->
@@ -61,30 +57,26 @@
                         <h3>Slider de Frases</h3>
                         <p>Mira algunas frases celebres sobre desarrollo web</p>
                         <div class="slider">
-                            <button id="btn-down" class="btn_phrases"><i class="fas fa-backward"></i></button>    
-                            <div id="phrases" class="phrases">
-                                <div class="card_phrase">
-                                    <h4>“Un diseñador sabe que ha alcanzado la perfección no cuando no queda nada que agregar, sino cuando no queda nada para quitar”</h4>
-                                    <p>Antoine de Saint-Exupéry</p>
-                                </div>
-                                <div class="card_phrase">
-                                    <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
-                                    <p>Neville Brody</p>
-                                </div>
-                                <div class="card_phrase">
-                                    <h4>“Aprender HTML y CSS es mucho más desafiante de lo que solía ser. El diseño web receptivo agrega más capas de complejidad para diseñar y desarrollar sitios web.”</h4>
-                                    <p>Jacob Lett</p>
-                                </div>
-                                <div class="card_phrase">
-                                    <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
-                                    <p>Neville Brody</p>
-                                </div>
-                                <div class="card_phrase">
-                                    <h4>“Escribir el primer 90% de un programa de computadora toma el 90% del tiempo. El 10% restante también toma el 90% del tiempo y los toques finales también toman el 90% del tiempo.”</h4>
-                                    <p>N.J. Rubenking</p>
-                                </div>
-                            </div>    
-                            <button id="btn-up" class="btn_phrases"><i class="fas fa-forward"></i></button> 
+                            <div class="card_phrase">
+                                <h4>“Un diseñador sabe que ha alcanzado la perfección no cuando no queda nada que agregar, sino cuando no queda nada para quitar”</h4>
+                                <p>Antoine de Saint-Exupéry</p>
+                            </div>
+                            <div class="card_phrase">
+                                <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
+                                <p>Neville Brody</p>
+                            </div>
+                            <div class="card_phrase">
+                                <h4>“Aprender HTML y CSS es mucho más desafiante de lo que solía ser. El diseño web receptivo agrega más capas de complejidad para diseñar y desarrollar sitios web.”</h4>
+                                <p>Jacob Lett</p>
+                            </div>
+                            <div class="card_phrase">
+                                <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
+                                <p>Neville Brody</p>
+                            </div>
+                            <div class="card_phrase">
+                                <h4>“Escribir el primer 90% de un programa de computadora toma el 90% del tiempo. El 10% restante también toma el 90% del tiempo y los toques finales también toman el 90% del tiempo.”</h4>
+                                <p>N.J. Rubenking</p>
+                            </div>
                         </div>
                    </div>
                    <p>🌱 Estoy muy interesado en aprender y crecer como profesional y como persona todos los días y me gusta escuchar a gente interesante y creativa que puede aportar algo a mi crecimiento integral como persona, así que no dudes en ponerte en contacto conmigo si deseas conectar.</p>
@@ -261,8 +253,8 @@
             </form>
         </section>
 
-        <button class="btn_night">
-            <i class="fas fa-moon icon_swap"></i>
+        <button class="btn_night" id="btn_night">
+            <img class="icon_swap" id="night_mode_icon" src="./assets/moon-regular.svg" alt="Moon">
         </button>
         <button class="btn_language">
             <i class="fas fa-language icon_swap"></i>
@@ -271,5 +263,7 @@
     <footer>
         <p>© 2021 — Juan Pablo Rendon</p>
     </footer>
+    <script src="./script/index.js"></script>
+    <script src="./script/menu.js"></script>
 </body>
 </html>
