@@ -3,11 +3,13 @@ header{
     position: fixed;
     top: 0;
     width: 100vw;
+    max-width: 100%;
+    height: 4rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw;
+    padding: $mb-2;
     background-color: $color_8;
     color: $color_4;
     z-index: 10;
@@ -22,6 +24,7 @@ header{
             bottom: 0;
             z-index: 99;
             background: $color_dark;
+            opacity: 90%;
             color: $color_primary;
             list-style: none;
             padding-top: 4rem;
@@ -29,7 +32,7 @@ header{
             .item_menu {
                 display: block;
                 margin: 2rem 4rem;
-                font-size: 1.8rem;
+                font-size: $small-h2-font-size;
 
                 a{
                     text-decoration: none;
@@ -49,10 +52,13 @@ header{
       
     .btn_menu {
         z-index: 100;
-        padding: 1vw;
+        padding: $mb-1;
         border: none;
-        cursor: pointer;
-        width: 30px;
+        border-radius: 50%;
         background: none;
+
+        img{
+            min-width: 20px;
+        }
     }    
 }

@@ -11,6 +11,8 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  max-width: 100%;
+  height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +26,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2vw;
+  padding: 1rem;
   background-color: #1B4332;
   color: #74C69D;
   z-index: 10;
@@ -44,6 +46,7 @@ header nav .menu {
   bottom: 0;
   z-index: 99;
   background: #081C15;
+  opacity: 90%;
   color: #D8F3DC;
   list-style: none;
   padding-top: 4rem;
@@ -52,7 +55,7 @@ header nav .menu {
 header nav .menu .item_menu {
   display: block;
   margin: 2rem 4rem;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
 }
 
 header nav .menu .item_menu a {
@@ -71,15 +74,19 @@ header nav .active {
 
 header .btn_menu {
   z-index: 100;
-  padding: 1vw;
+  padding: 0.5rem;
   border: none;
-  cursor: pointer;
-  width: 30px;
+  border-radius: 50%;
   background: none;
+}
+
+header .btn_menu img {
+  min-width: 20px;
 }
 
 main {
   width: 100vw;
+  max-width: 100%;
   background: #D8F3DC;
   overflow: hidden;
   display: -webkit-box;
@@ -89,31 +96,47 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 8vh;
+  margin-top: 4rem;
 }
 
 main section {
   padding: 10vh 2vw 0 2vw;
+  min-height: 90vh;
+}
+
+main h1 {
+  font-size: 2rem;
 }
 
 main h2 {
   color: #081C15;
-  padding: 2vh;
+  font-size: 1.25rem;
+  padding: 0.5rem;
   z-index: 2;
   position: relative;
 }
 
 main .home {
-  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .home .home_data {
   line-height: 10vh;
   font-size: large;
   width: 46vw;
+  min-width: 228px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -152,21 +175,18 @@ main .home .home_img {
   z-index: 2;
 }
 
-main .home .home_img .img_container {
-  border: 1px solid #081C15;
-  border-radius: 50%;
-  height: 50vh;
-  width: 30vw;
-}
-
 main .home .home_img img {
   border-radius: 50%;
-  height: 50vh;
-  width: 30vw;
+  height: 50%;
+  min-height: 300px;
+  width: 80%;
+  min-width: 200px;
+  margin: 1rem;
 }
 
 main .home svg {
   position: absolute;
+  max-width: 100%;
   left: 0;
 }
 
@@ -176,27 +196,33 @@ main .about .container_about {
 }
 
 main .about .container_about p {
-  padding: 1vh 3vw;
+  padding: 1rem;
+  font-size: 0.938rem;
+  text-align: justify;
 }
 
 main .about .container_about .container_phrases .slider {
-  height: 50vh;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: hidden;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: transform(0.3s ease-out), transform(0.3s ease-out);
-  transition: transform(0.3s ease-out), transform(0.3s ease-out);
-  transition: transform(0.3s ease-out);
-  cursor: -webkit-grab;
-  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 20vh;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  background-color: #95D5B2;
+  border-radius: 0.5rem;
 }
 
 main .about .container_about .container_phrases .slider .card_phrase {
-  max-height: 50vh;
-  width: 25vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,40 +230,45 @@ main .about .container_about .container_phrases .slider .card_phrase {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: transform(0.3s ease-out), transform(0.3s ease-out);
-  transition: transform(0.3s ease-out), transform(0.3s ease-out);
-  transition: transform(0.3s ease-out);
+  -o-object-fit: cover;
+     object-fit: cover;
+  scroll-snap-align: center;
+  min-width: 220px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 2px dotted #2D6A4F;
+  border-radius: 0.5rem;
+  background-color: #B7E4C7;
+  color: #2D6A4F;
 }
 
-main .about .container_about .container_phrases .grabbing {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
+main .about .container_about .container_phrases .slider .card_phrase h4 {
+  text-align: justify;
 }
 
-main .about .container_about .container_phrases .grabbing .card_phrase {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+main .about .container_about .container_phrases .slider .card_phrase p {
+  text-align: center;
 }
 
 main .about .svg_about {
   position: absolute;
-  top: 70vh;
+  left: 0;
+  right: 0;
+  top: 80vh;
   z-index: 1;
 }
 
 main .skills {
   background: url("../assets/cool-background.svg");
+}
+
+main .skills p {
+  padding: 1rem;
+  font-size: 0.938rem;
+  text-align: justify;
 }
 
 main .skills .skills__data {
@@ -251,7 +282,7 @@ main .skills .skills__data {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   margin: 2vh;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
@@ -259,7 +290,7 @@ main .skills .skills__data {
 }
 
 main .skills .skills__icon {
-  font-size: 2rem;
+  font-size: 1.25rem;
   margin-right: 1vw;
   color: #081C15;
 }
@@ -311,8 +342,8 @@ main .projects .container_cards {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 10px;
-  margin: 10px 20px;
+  gap: 0.5rem;
+  margin: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -324,7 +355,7 @@ main .projects .container_cards {
 main .projects .container_cards .card {
   border: 2px solid #081C15;
   background-color: #74C69D;
-  border-radius: 5%;
+  border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,24 +366,67 @@ main .projects .container_cards .card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 5vw;
+  margin: 1rem;
+  min-height: 330px;
+  min-width: 418px;
+  position: relative;
+  overflow: hidden;
 }
 
 main .projects .container_cards .card img {
-  border-radius: 20%;
-  padding: 2%;
-  height: 60vh;
-  width: 100%;
+  border-radius: 1rem;
+  margin: 1rem;
+  height: 70%;
+  width: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 main .projects .container_cards .card .container {
-  padding: 2%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: absolute;
+  background: #081C15;
+  opacity: 90%;
+  width: 100%;
+  height: 100%;
+}
+
+main .projects .container_cards .card .container .btn_card {
+  border: none;
+  border-radius: 50%;
+  background: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  min-width: 30px;
+  max-width: 10%;
+  min-height: 30px;
+  max-height: 10%;
+}
+
+main .projects .container_cards .card .container .btn_card img {
+  min-width: 30px;
+  min-height: 30px;
+  margin: 0;
+}
+
+main .projects .container_cards .card .container h3 {
+  font-size: 0.938rem;
+  padding: 0 0.5rem;
+  color: #D8F3DC;
+}
+
+main .projects .container_cards .card .container p {
+  color: #95D5B2;
+  text-align: justify;
+  padding: 0.5rem 1rem;
 }
 
 main .projects .container_cards .card .container ul {
@@ -363,10 +437,24 @@ main .projects .container_cards .card .container ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 2% 5%;
+  padding: 0.5rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+}
+
+main .projects .container_cards .card .container ul li i::before {
+  color: #D8F3DC;
+}
+
+main .projects .container_cards .card .container .btn_projects {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #2D6A4F;
+  background-color: #95D5B2;
 }
 
 main .contact {
@@ -374,11 +462,11 @@ main .contact {
 }
 
 main .contact h3 {
-  padding: 1%;
-  margin: 1%;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-main .contact .cv_container, main .contact .linked_container, main .contact .github_container {
+main .contact .cv_container, main .contact .linked_container, main .contact .github_container, main .contact .switch_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,43 +479,33 @@ main .contact .cv_container, main .contact .linked_container, main .contact .git
           align-items: center;
 }
 
-main .contact .switch_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-main .contact .switch_container .switch-button {
+main .contact .switch_container .switch-button-container {
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-main .contact .switch_container .switch-button .switch-button__checkbox {
+main .contact .switch_container .switch-button-container .switch-button__checkbox {
   display: none;
 }
 
-main .contact .switch_container .switch-button .switch-button__label {
+main .contact .switch_container .switch-button-container .switch-button__label {
   background-color: red;
-  width: 8vw;
-  height: 4vw;
+  width: 2.5rem;
+  height: 1rem;
   border-radius: 3rem;
   display: inline-block;
   position: relative;
 }
 
-main .contact .switch_container .switch-button .switch-button__label:before {
-  -webkit-transition: .2s;
-  transition: .2s;
+main .contact .switch_container .switch-button-container .switch-button__label:before {
+  -webkit-transition: .3s;
+  transition: .3s;
   display: block;
   position: absolute;
-  width: 4.2vw;
-  height: 4vw;
+  width: 1.4rem;
+  height: 1rem;
   background-color: white;
   content: '';
   border-radius: 50%;
@@ -435,18 +513,18 @@ main .contact .switch_container .switch-button .switch-button__label:before {
           box-shadow: inset 0px 0px 0px 1px black;
 }
 
-main .contact .switch_container .switch-button .switch-button__checkbox:checked + .switch-button__label {
+main .contact .switch_container .switch-button-container .switch-button__checkbox:checked + .switch-button__label {
   background-color: green;
 }
 
-main .contact .switch_container .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
-  -webkit-transform: translateX(2rem);
-          transform: translateX(2rem);
+main .contact .switch_container .switch-button-container .switch-button__checkbox:checked + .switch-button__label:before {
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
 }
 
 main .contact .form {
   border: 2px solid #081C15;
-  border-radius: 5%;
+  border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,32 +536,31 @@ main .contact .form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 2%;
+  width: 80vw;
+  padding: 1rem;
 }
 
 main .contact .form p {
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 0.5rem;
 }
 
 main .contact .form label {
-  padding: 1% 2%;
+  padding: 0.5rem;
 }
 
 main .contact .form label .input_radio {
-  padding: 1%;
-  margin: 1%;
-  margin-left: 5%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 main .contact .form label .input_text, main .contact .form label textarea {
   width: 100%;
-  padding: 1%;
-  margin: 1%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 main .contact .form .div_btn {
@@ -496,12 +573,16 @@ main .contact .form .div_btn {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 2%;
+  padding: 0.5rem;
 }
 
 main .contact .form .div_btn .btn_form {
   width: 40%;
-  padding: 2%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #2D6A4F;
+  color: #74C69D;
 }
 
 main .btn_night {
@@ -542,6 +623,7 @@ footer {
   display: flex;
   background-color: #B7E4C7;
   width: 100vw;
+  max-width: 100%;
   height: 8vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -552,5 +634,11 @@ footer {
   font-size: large;
   font-weight: bold;
   padding: 5vh;
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    padding: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

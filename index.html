@@ -35,9 +35,7 @@
                 <a href="#contact_id" class="button">Contacto</a>
             </div>
             <div class="home_img">    
-                <div class="img_container">
-                    <img src="assets/Foto jp.jpeg" alt="Foto">
-                </div> 
+                <img src="assets/Foto jp.jpeg" alt="Foto">
             </div>
         </section>
 
@@ -54,8 +52,7 @@
                    Creo firmemente en que la única forma de acelerar el progreso de Colombia es empleando la tecnología al servicio de toda la cadena de producción y transformación, para poder aprovechar el potencial de convertirse en una despensa agrícola. <br>
                    Para mostrales un poco porque creo esto, quiero que observen algunas frases celebres sobre el desarrollo web: </p>
                    <div class="container_phrases">
-                        <h3>Slider de Frases</h3>
-                        <p>Mira algunas frases celebres sobre desarrollo web</p>
+                        <h2>Slider de Frases</h2>
                         <div class="slider">
                             <div class="card_phrase">
                                 <h4>“Un diseñador sabe que ha alcanzado la perfección no cuando no queda nada que agregar, sino cuando no queda nada para quitar”</h4>
@@ -70,12 +67,20 @@
                                 <p>Jacob Lett</p>
                             </div>
                             <div class="card_phrase">
-                                <h4>“El diseño digital es como pintar, excepto que la pintura nunca se seca.”</h4>
-                                <p>Neville Brody</p>
+                                <h4>“El logro más impresionante de la industria del software es su continua anulación de los constantes y asombrosos logros de la industria del hardware.”</h4>
+                                <p>Henry Petroski</p>
                             </div>
                             <div class="card_phrase">
                                 <h4>“Escribir el primer 90% de un programa de computadora toma el 90% del tiempo. El 10% restante también toma el 90% del tiempo y los toques finales también toman el 90% del tiempo.”</h4>
                                 <p>N.J. Rubenking</p>
+                            </div>
+                            <div class="card_phrase">
+                                <h4>“La verdadera innovación a menudo viene de las pequeñas startups que son capaces de crear mercados pero carecen de peso para poseerlos.”</h4>
+                                <p>Timm Martin</p>
+                            </div>
+                            <div class="card_phrase">
+                                <h4>“Primero resuelve el problema. Entonces, escribe el código.”</h4>
+                                <p>John Johnson</p>
                             </div>
                         </div>
                    </div>
@@ -156,40 +161,49 @@
                 <div class="card">
                     <img src="assets/podcast-channel.jpg" alt="Proyecto 1">
                     <div class="container" style="display: none;">
-                      <h3><b>Podcast Channel</b></h3>
-                      <p>Maquetación del Landing Page de un Podcast Channel utilizando los lenguajes HTML y CSS, haciendo uso del preprocesador SASS y desarrollando funcionalidades de reproducción de contenidos, navegación, compatibilidad con múltiples exploradores y dispositivos.</p>
-                      <ul>
-                        <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a></li>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-css3"></i></a></li>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-sass"></i></a></li>
-                      </ul>
-                      <a class="btn_projects" href="https://landing-page-podcast-channel-acamica.000webhostapp.com/" target="_blank" rel="noopener noreferrer">Ver Mas</a>
+                        <button class="btn_card" id="btn_card">
+                            <img class="img_card" id="img_card" src="./assets/times-solid.svg" alt="menu">
+                        </button>
+                        <h3><b>Podcast Channel</b></h3>
+                        <p>Maquetación del Landing Page de un Podcast Channel utilizando los lenguajes HTML y CSS, haciendo uso del preprocesador SASS y desarrollando funcionalidades de reproducción de contenidos, navegación, compatibilidad con múltiples exploradores y dispositivos.</p>
+                        <ul>
+                            <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a></li>
+                            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-css3"></i></a></li>
+                            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-sass"></i></a></li>
+                        </ul>
+                        <a class="btn_projects" href="https://landing-page-podcast-channel-acamica.000webhostapp.com/" target="_blank" rel="noopener noreferrer">Ver Mas</a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="assets/proyecto-gifos.jpg" id="gifos_img" alt="Proyecto 2">
                     <div class="container" style="display: none;">
-                      <h3><b>Proyecto Gifos</b></h3>
-                      <p>Desarrollo de una aplicación web interactiva que permite la búsqueda, descarga y creación de GIFS mediante la obtención de datos de la API remota de Giphy, utilizando los lenguajes HTML, CSS y JavaScript, haciendo uso del preprocesador SASS, y trabajando con asincronismo y el uso de herramientas nativas del explorador como la obtención de imágenes a través de la webcam.</p>
-                      <ul>
-                        <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a></li>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-js"></i></a></li>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-css3"></i></a></li>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-sass"></i></a></li>
-                      </ul>
-                      <a class="btn_projects" href="https://proyecto-gifos-acamica.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Mas</a>
+                        <button class="btn_card" id="btn_card">
+                            <img class="img_card" id="img_card" src="./assets/times-solid.svg" alt="menu">
+                        </button>
+                        <h3><b>Proyecto Gifos</b></h3>
+                        <p>Desarrollo de una aplicación web interactiva que permite la búsqueda, descarga y creación de GIFS mediante la obtención de datos de la API remota de Giphy, utilizando los lenguajes HTML, CSS y JavaScript, haciendo uso del preprocesador SASS, y trabajando con asincronismo y el uso de herramientas nativas del explorador como la obtención de imágenes a través de la webcam.</p>
+                        <ul>
+                            <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a></li>
+                            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-js"></i></a></li>
+                            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-css3"></i></a></li>
+                            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-sass"></i></a></li>
+                        </ul>
+                        <a class="btn_projects" href="https://proyecto-gifos-acamica.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Mas</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/delilah-resto.jpg" alt="Proyecto 3" style="width:100%">
+                    <img src="assets/delilah-resto.jpg" alt="Proyecto 3">
                     <div class="container" style="display: none;">
-                      <h3><b>Delilah Resto API</b></h3>
-                      <p>Desarrollo de una API que controla el sistema de pedidos online para un restaurante utilizando el lenguaje JavaScript, haciendo uso del entorno de ejecución Node.js, el framework Express.js y un sistema de bases de datos relacionales con SQL. Desarrollando funcionalidades que permitan realizar altas, bajas, modificaciones y obtención de información sobre una estructura de datos que podría consumir un cliente.</p>
-                      <ul>
-                        <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-js"></i></a></li>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-node-js"></i></a></li>
-                      </ul>
-                      <a class="btn_projects" href="https://github.com/juparefe/Delilah-Resto" target="_blank" rel="noopener noreferrer">Ver Mas</a>
+                        <button class="btn_card" id="btn_card">
+                            <img class="img_card" id="img_card" src="./assets/times-solid.svg" alt="menu">
+                        </button>  
+                        <h3><b>Delilah Resto API</b></h3>
+                        <p>Desarrollo de una API que controla el sistema de pedidos online para un restaurante utilizando el lenguaje JavaScript, haciendo uso del entorno de ejecución Node.js, el framework Express.js y un sistema de bases de datos relacionales con SQL. Desarrollando funcionalidades que permitan realizar altas, bajas, modificaciones y obtención de información sobre una estructura de datos que podría consumir un cliente.</p>
+                        <ul>
+                            <li><a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-js"></i></a></li>
+                            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fab fa-node-js"></i></a></li>
+                        </ul>
+                        <a class="btn_projects" href="https://github.com/juparefe/Delilah-Resto" target="_blank" rel="noopener noreferrer">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -213,12 +227,12 @@
             <div class="switch_container">
                 <h3>¿Deseas dejar un mensaje?:</h3>
                 
-                <div class="switch-button">
+                <div class="switch-button-container">
                     <label>No, gracias</label>
                     <!-- Checkbox -->
                     <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
                     <!-- Botón -->
-                    <label for="switch-label" class="switch-button__label"></label>
+                    <label for="switch-label" id="switch-button" class="switch-button__label"></label>
                     <label>Si, porfavor</label>
                 </div>
             </div>         
@@ -232,19 +246,19 @@
                 </label>
                 <label for="">
                     Nombre Completo:
-                    <input type="text" class="input_text">
+                    <input type="text" class="input_text" placeholder="Por ejemplo: Pepito Ramirez">
                 </label>
                 <label for="">
                     Pais:
-                    <input type="text" class="input_text">
+                    <input type="text" class="input_text" placeholder="Por ejemplo: Colombia">
                 </label>
                 <label for="">
                     Email:
-                    <input type="email" class="input_text">
+                    <input type="email" class="input_text" placeholder="Por ejemplo: correo@gmail.com">
                 </label>
                 <label for="">
                     Mensaje:
-                    <textarea name="textarea" rows="10" cols="50" placeholder="Write something here"></textarea>
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Escribe aqui tu mensaje"></textarea>
                 </label>
                 <div class="div_btn">
                     <input type="submit" class="btn_form">
