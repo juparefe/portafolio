@@ -5,7 +5,7 @@ var night_mode = localStorage.getItem("night_mode");
 
 //Para poner el modo con el que se cerro la pagina Nocturno - Diurno
 window.onload = function() {
-    if (night_mode.match(null)) {
+    if (night_mode === null) {
         night_mode = "theme-light";
     }
     setTheme(night_mode);
