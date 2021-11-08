@@ -5,27 +5,32 @@ var night_mode = localStorage.getItem("night_mode");
 
 //Para poner el modo con el que se cerro la pagina Nocturno - Diurno
 window.onload = function() {
-    if (night_mode.match("noche")) {
-        btn_night.click();
+    setTheme(night_mode);
+    if (checked) {
+        switch_button.click();
     }
-    
   };
 
-//Funcion de nodo nocturno
+//Boton de cambio de modo diurno / nocturno
 btn_night.addEventListener('click', () =>{
-    document.body.classList.toggle('dark');
     btn_night.classList.toggle('active');
-    if (night_mode_icon.src.match("moon")) {
+    if (night_mode.match("theme-dark")) {
         night_mode_icon.src = "./assets/sun-regular.svg";
-        night_mode = "dia";
+        night_mode = "theme-light";
         localStorage.setItem("night_mode", night_mode);
+        setTheme(night_mode);
     }else{
         night_mode_icon.src = "./assets/moon-regular.svg"
-        night_mode = "noche";
+        night_mode = "theme-dark";
         localStorage.setItem("night_mode", night_mode);
+        setTheme(night_mode);
     }
 })
 
+//Funcion para asignar los colores 
+function setTheme(theme) {
+    document.documentElement.className = theme;
+}
 //Tarjetas de Proyectos
 const cards = Array.from(document.querySelectorAll('.card'));
 const descriptions = Array.from(document.querySelectorAll('.container'));
@@ -49,7 +54,7 @@ let checked = false;
 
 switch_button.addEventListener("click",function () {
     if (!checked) {
-        checked = true;
+        checked = true; 
         form.style.display = "flex";
     } else {
         checked = false;

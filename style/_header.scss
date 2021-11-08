@@ -10,8 +10,8 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: $mb-2;
-    background-color: $color_8;
-    color: $color_4;
+    background-color: var(--color_dark);
+    color: var(--color_2);
     z-index: 10;
     nav{
         .menu {
@@ -23,9 +23,9 @@ header{
             right: 0;
             bottom: 0;
             z-index: 99;
-            background: $color_dark;
+            background: var(--color_dark);
             opacity: 90%;
-            color: $color_primary;
+            color: var(--color_bg);
             list-style: none;
             padding-top: 4rem;
 
@@ -36,7 +36,7 @@ header{
 
                 a{
                     text-decoration: none;
-                    color: $color_3;
+                    color: var(--color_2);
                 }
               }
               
@@ -54,8 +54,8 @@ header{
         z-index: 100;
         padding: $mb-1;
         border: none;
-        border-radius: 50%;
-        background: none;
+        border-radius: 40%;
+        background: var(--color_2);
 
         img{
             min-width: 20px;

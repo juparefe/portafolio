@@ -1,7 +1,7 @@
 main{
     width: 100vw;
     max-width: 100%;
-    background: $color_primary;
+    background: var(--color_bg);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -17,11 +17,15 @@ main{
     }
 
     h2{
-        color: $color_dark;
+        color: var(--color_dark);
         font-size: $small-h2-font-size;
         padding: $mb-1;
         z-index: 2;
         position: relative;
+    }
+
+    p, h3, label{
+        color: var(--color-text);
     }
 
     .home{
@@ -41,14 +45,14 @@ main{
             .home_title{
                 padding-left: 2vw;
                 span{
-                    color: $color_4;
+                    color: var(--color_3);
                 }
             }
 
             .button {
                 text-decoration: none;
-                background-color: $color_dark;
-                color: $color_primary;
+                background-color: var(--color_dark);
+                color: var(--color_bg);
                 margin-left: 2vw;
                 padding: 2vh 2vw;
                 border-radius: 0.5rem;
@@ -78,6 +82,10 @@ main{
             position: absolute;
             max-width: 100%;
             left: 0;
+            polygon{
+                fill: var(--color_2);
+            }
+            
         }
     }
 
@@ -101,7 +109,7 @@ main{
                     min-height: 20vh;
                     scroll-snap-type: x mandatory;
                     overflow-x: scroll;
-                    background-color: $color_3;
+                    background-color: var(--color_3);
                     border-radius: $mb-1;
                     
                     .card_phrase{
@@ -113,10 +121,10 @@ main{
                         min-width: 220px;
                         margin: $mb-1;
                         padding: $mb-1;
-                        border: 2px dotted $color_7;
+                        border: 2px dotted var(--color_3);
                         border-radius: $mb-1;
-                        background-color: $color_secundary;
-                        color: $color_7;
+                        background-color: var(--color_2);
+                        color: var(--color_3);
 
                         h4{
                             text-align: justify;
@@ -137,6 +145,10 @@ main{
             right: 0;
             top: 80vh;
             z-index: 1;
+            path{
+                fill: var(--color_2);
+            }
+            
         }
     }
 
@@ -157,12 +169,14 @@ main{
             padding: $mb-1;
             margin: 2vh;
             border-radius: $mb-1;
+            background-color: var(--color_white);
+            opacity: 60%;
             box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
         }
         .skills__icon {
             font-size: $small-h2-font-size;
             margin-right: 1vw;
-            color: $color_dark;
+            color: var(--color_dark);
         }
         .skills__names {
             display: flex;
@@ -172,7 +186,7 @@ main{
             position: absolute;
             left: 0;
             bottom: 0;
-            background-color: $color_5;
+            background-color: var(--color_3);
             height: 0.25rem;
             border-radius: 0.5rem;
         }
@@ -207,8 +221,8 @@ main{
             align-items: center;
 
             .card{
-                border: 2px solid $color_dark;
-                background-color: $color_4;
+                border: 2px solid var(--color_dark);
+                background-color: var(--color_3);
                 border-radius: $mb-2;
                 display: flex;
                 flex-direction: column;
@@ -232,7 +246,8 @@ main{
                     display: flex;
                     flex-flow: column nowrap;
                     position: absolute;
-                    background: $color_dark;
+                    justify-content: space-around;
+                    background: var(--color_dark);
                     opacity: 90%;
                     width: 100%;
                     height: 100%;
@@ -240,7 +255,7 @@ main{
                     .btn_card {
                         border: none;
                         border-radius: 50%;
-                        background: none;
+                        background: var(--color_2);
                         align-self: flex-end;
                         min-width: 30px;
                         max-width: 10%;
@@ -257,11 +272,11 @@ main{
                     h3{
                         font-size: $small-normal-font-size;
                         padding: 0 $mb-1;
-                        color: $color_primary;
+                        color: var(--color_bg);
                     }
 
                     p{
-                        color: $color_3;
+                        color: var(--color_2);
                         text-align: justify;
                         padding: $mb-1 $mb-2;
                     }
@@ -274,7 +289,7 @@ main{
                         list-style: none;
                         li{
                             i::before{
-                                color: $color_primary;
+                                color: var(--color_bg);
                             }
                         }
                     }
@@ -285,8 +300,8 @@ main{
                         border-radius: $mb-1;
                         margin: 0 auto;
                         text-decoration: none;
-                        color: $color_7;
-                        background-color: $color_3;
+                        color: var(--color_dark);
+                        background-color: var(--color_2);
                     }
                 }
             }
@@ -348,7 +363,7 @@ main{
         }
 
         .form{
-            border: 2px solid $color_dark;
+            border: 2px solid var(--color_dark);
             border-radius: $mb-2;
             display: flex;
             flex-flow: column wrap;
@@ -391,8 +406,8 @@ main{
                     padding: $mb-1;
                     border: none;
                     border-radius: $mb-1;
-                    background-color: $color_7;
-                    color: $color_4;
+                    background-color: var(--color_dark);
+                    color: var(--color_3);
                 }
             }
         }
@@ -401,11 +416,13 @@ main{
     .btn_night{
         width: 8vw;
         height: 8vw;
-        border: 1px dashed $color_dark;
+        border: 1px dashed var(--color_dark);
         border-radius: 50%;
         position: fixed;
         right: 5vw;
         bottom: 3vh;
+        background-color: var(--color_2);
+        z-index: $z-fixed;
         img{
             padding: 5px;
         }
@@ -414,11 +431,13 @@ main{
     .btn_language{
         width: 8vw;
         height: 8vw;
-        border: 1px dashed $color_dark;
+        border: 1px dashed var(--color_dark);
         border-radius: 50%;
         position: fixed;
         right: 15vw;
         bottom: 3vh;
+        background-color: var(--color_2);
+        z-index: $z-fixed;
         img{
             padding: 5px;
         }

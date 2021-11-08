@@ -1,5 +1,33 @@
 @media screen and (min-width: $small-device) {
     header{
-        padding: $mb-3;
+        padding: $mb-1 $mb-2;
+    }
+    main{
+        p{
+            font-size: $medium-normal-font-size;
+        }
+        .home{
+            .home_img{
+                img{
+                    max-height: 320px;
+                    max-width: 240px;
+                }
+            }
+        }
+        .projects{
+            .container_cards{
+                margin: $mb-2 $mb-6;
+                .card{
+                    img{
+                        max-width: 400px;
+                    }
+                    .container{
+                        i::before{
+                            font-size: $small-h1-font-size;
+                        }
+                    }
+                }
+            }
+        }
     } 
 }

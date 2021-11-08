@@ -12,17 +12,37 @@ $mb-4: 2rem;
 $mb-5: 2.5rem;
 $mb-6: 3rem;
 
+//Z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
 //Font Size
 $small-h1-font-size: 2rem;
 $small-h2-font-size: 1.25rem;
 $small-normal-font-size: 0.938rem;
+$medium-normal-font-size: 1rem;
 
 //Colors
-$color_primary:#D8F3DC;
-$color_secundary:#B7E4C7;
-$color_3:#95D5B2;
-$color_4:#74C69D;
-$color_5:#52B788;
-$color_7: #2D6A4F;
-$color_8: #1B4332;
-$color_dark: #081C15;
+.theme-light{
+    --color_bg:#D8F3DC;
+    --color_white:#FFF;
+    --color_black:#000;
+    --color-text:#000;
+    --color_2:#95D5B2;
+    --color_3:#2D6A4F;
+    --color_dark: #081C15;
+}
+
+
+//Colors Dark
+.theme-dark{
+    --color_bg:#0D1821;
+    --color_white:#FFF;
+    --color_black:#000;
+    --color-text:#FFF;
+    --color_2:#344966;
+    --color_3:#F0F4EF;
+    --color_dark: #BFCC94;
+}

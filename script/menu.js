@@ -5,11 +5,9 @@ let btn_menu = document.getElementById("btn_menu");
 
 function toggleMenu() {
     if(img_menu.src.match("times")){
-        console.log("inactivo");
         menu.classList.remove("active");
         img_menu.src = "../assets/bars-solid.svg";
     } else {
-        console.log("inactivo");
         menu.classList.add("active");
         img_menu.src = "../assets/times-solid.svg";
     }   
