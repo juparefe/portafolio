@@ -53,6 +53,7 @@
         }
         .projects{
             .container_cards{
+                grid-template-columns: 1fr 1fr;
                 .card{
                     .container{
                         .btn_card{

@@ -425,7 +425,7 @@ main .projects .container_cards .card {
 main .projects .container_cards .card img {
   border-radius: 1rem;
   margin: 1rem;
-  height: 70%;
+  height: 20rem;
   width: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -778,6 +778,10 @@ footer {
   }
   main .about .svg_about {
     top: 30rem;
+  }
+  main .projects .container_cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   main .projects .container_cards .card .container .btn_card {
     visibility: hidden;
