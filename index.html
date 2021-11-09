@@ -13,11 +13,11 @@
         <i>Juan Pablo Rendon</i>
         <nav>
             <ul class="menu">
-                <li class="item_menu"><a href="#home_id">HOME</a></li>
-                <li class="item_menu"><a href="#about_id">QUIEN SOY</a></li>
-                <li class="item_menu"><a href="#skills_id">HABILIDADES</a></li>
-                <li class="item_menu"><a href="#projects_id">PROYECTOS</a></li>
-                <li class="item_menu"><a href="#contact_id">CONTACTO</a></li>
+                <li class="item_menu"><a href="#home_id">HOME<i class="fab fa-pagelines"></i></a></li>
+                <li class="item_menu"><a href="#about_id">QUIEN SOY<i class="fab fa-pagelines"></i></a></li>
+                <li class="item_menu"><a href="#skills_id">HABILIDADES<i class="fab fa-pagelines"></i></a></li>
+                <li class="item_menu"><a href="#projects_id">PROYECTOS<i class="fab fa-pagelines"></i></a></li>
+                <li class="item_menu"><a href="#contact_id">CONTACTO<i class="fab fa-pagelines"></i></a></li>
             </ul>
         </nav>
         <button class="btn_menu" id="btn_menu">
@@ -160,7 +160,7 @@
             <div class="container_cards">
                 <div class="card">
                     <img src="assets/podcast-channel.jpg" alt="Proyecto 1">
-                    <div class="container" style="display: none;">
+                    <div class="container">
                         <button class="btn_card" id="btn_card">
                             <img class="img_card" id="img_card" src="./assets/times-solid.svg" alt="menu">
                         </button>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="card">
                     <img src="assets/proyecto-gifos.jpg" id="gifos_img" alt="Proyecto 2">
-                    <div class="container" style="display: none;">
+                    <div class="container" style="visibility: hidden;">
                         <button class="btn_card" id="btn_card">
                             <img class="img_card" id="img_card" src="./assets/times-solid.svg" alt="menu">
                         </button>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="card">
                     <img src="assets/delilah-resto.jpg" alt="Proyecto 3">
-                    <div class="container" style="display: none;">
+                    <div class="container" style="visibility: hidden;">
                         <button class="btn_card" id="btn_card">
                             <img class="img_card" id="img_card" src="./assets/times-solid.svg" alt="menu">
                         </button>  
@@ -216,15 +216,15 @@
             <h2>Contacto:</h2>
             <div class="cv_container">
                 <h3>Este es mi CV <i class="fas fa-file-pdf"></i>:</h3>
-                <a href="https://drive.google.com/drive/my-drive?hl=es">CV</a>
+                <a href="https://drive.google.com/file/d/1E-zjH3MmZPRRs3j1S_A0bBKJrnMtGsbJ/view?usp=sharing" target="_blank">CV</a>
             </div>
             <div class="linked_container">
                 <h3>Este es mi perfil de LinkedIn <i class="fab fa-linkedin"></i>:</h3>
-                <a href="https://www.linkedin.com/in/juan-pablo-rendon/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/juan-pablo-rendon/" target="_blank">LinkedIn</a>
             </div>
             <div class="github_container">
                 <h3>Este es mi repositorio de GitHub <i class="fab fa-github-square"></i>:</h3> 
-                <a href="https://github.com/juparefe">GitHub</a>
+                <a href="https://github.com/juparefe" target="_blank">GitHub</a>
             </div>
             <div class="switch_container">
                 <h3>¿Deseas dejar un mensaje?:</h3>
@@ -238,7 +238,7 @@
                     <label>Si, porfavor</label>
                 </div>
             </div>         
-            <form class="form" action="submit" style="display: none;">
+            <form class="form" action="mailto:juanpablorendonfernandez@gmail.com" method="post" enctype="text/plain" style="display: none;">
                 <p>Formulario de contacto</p>
                 <label for="">
                     Sexo:
@@ -272,7 +272,7 @@
         <button class="btn_night" id="btn_night">
             <img class="icon_swap" id="night_mode_icon" src="./assets/moon-regular.svg" alt="Moon">
         </button>
-        <button class="btn_language">
+        <button class="btn_language" style="display: none;">
             <i class="fas fa-language icon_swap"></i>
         </button>
     </main>

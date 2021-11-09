@@ -5,8 +5,12 @@ var night_mode = localStorage.getItem("night_mode");
 
 //Para poner el modo con el que se cerro la pagina Nocturno - Diurno
 window.onload = function() {
-    night_mode = "theme-light";
-    setTheme(night_mode);
+    if (night_mode) {
+        setTheme(night_mode);
+    } else {
+        night_mode = "theme-light";
+        setTheme(night_mode);
+    }
     
     if (checked) {
         switch_button.click();
@@ -32,6 +36,11 @@ btn_night.addEventListener('click', () =>{
 //Funcion para asignar los colores 
 function setTheme(theme) {
     document.documentElement.className = theme;
+    if (theme.match("theme-light")) {
+        night_mode_icon.src = "./assets/moon-regular.svg"
+    }else{
+        night_mode_icon.src = "./assets/sun-regular.svg";
+    }
 }
 //Tarjetas de Proyectos
 const cards = Array.from(document.querySelectorAll('.card'));
@@ -40,12 +49,12 @@ const buttons = Array.from(document.querySelectorAll('.btn_card'));
 
 cards.forEach((card, index) => {
     card.addEventListener("touchstart", function () {
-        descriptions[index].style.display = "flex";
+        descriptions[index].style.visibility = "visible";
     });
 });
 buttons.forEach((button, index) => {
     button.addEventListener("touchend", function () {
-        descriptions[index].style.display = "none";
+        descriptions[index].style.visibility = "hidden";
     });
 });
 

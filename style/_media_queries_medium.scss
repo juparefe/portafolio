@@ -1,6 +1,6 @@
 @media screen and (min-width: $small-device) {
     header{
-        padding: $mb-1 $mb-2;
+        padding: 0 $mb-2;
     }
     main{
         p{
@@ -28,6 +28,10 @@
                     }
                 }
             }
+        }
+        .btn_night{
+            height: 4rem;
+            width: 4rem;
         }
     } 
 }

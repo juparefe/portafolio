@@ -23,6 +23,7 @@ $small-h1-font-size: 2rem;
 $small-h2-font-size: 1.25rem;
 $small-normal-font-size: 0.938rem;
 $medium-normal-font-size: 1rem;
+$large-normal-font-size: 1.25rem;
 
 //Colors
 .theme-light{
@@ -33,6 +34,9 @@ $medium-normal-font-size: 1rem;
     --color_2:#95D5B2;
     --color_3:#2D6A4F;
     --color_dark: #081C15;
+    --menu_gradient: linear-gradient(to bottom, var(--color_bg), var(--color_dark));
+    --btn_gradient: linear-gradient(70deg, var(--color_bg), var(--color_dark));
+    --background-skills: url("../assets/cool-background-light.svg");
 }
 
 
@@ -45,4 +49,15 @@ $medium-normal-font-size: 1rem;
     --color_2:#344966;
     --color_3:#F0F4EF;
     --color_dark: #BFCC94;
+    --menu_gradient: linear-gradient(to bottom, var(--color_bg), var(--color_dark));
+    --btn_gradient: linear-gradient(70deg, var(--color_bg), var(--color_dark));
+    --background-skills: url("../assets/cool-background-dark.svg");
+}
+
+//Español
+.laguage-spanish{
+    --item-menu-about:"QUIEN SOY";
+    --item-menu-skills:"HABILIDADES";
+    --item-menu-projects:"PROYECTOS";
+    --item-menu-contact:"CONTACTO";
 }
