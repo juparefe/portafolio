@@ -434,7 +434,6 @@ main .projects .container_cards .card img {
 
 main .projects .container_cards .card .container {
   padding: 1rem;
-  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +445,7 @@ main .projects .container_cards .card .container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: var(--color_dark);
-  opacity: 90%;
+  opacity: 0;
   width: 100%;
   height: 100%;
 }
@@ -780,11 +779,11 @@ footer {
   main .about .svg_about {
     top: 30rem;
   }
-  main .projects .container_cards .container {
-    z-index: 10;
+  main .projects .container_cards .card .container .btn_card {
+    visibility: hidden;
   }
-  main .projects .container_cards .container:hover {
-    visibility: visible;
+  main .projects .container_cards .card .container:hover {
+    opacity: 90%;
   }
   main .contact .btn_form {
     font-size: 1.25rem;

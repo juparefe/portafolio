@@ -47,16 +47,18 @@ const cards = Array.from(document.querySelectorAll('.card'));
 const descriptions = Array.from(document.querySelectorAll('.container'));
 const buttons = Array.from(document.querySelectorAll('.btn_card'));
 
-cards.forEach((card, index) => {
-    card.addEventListener("touchstart", function () {
-        descriptions[index].style.visibility = "visible";
+if(window.matchMedia("(max-width: 768px)").matches){
+    cards.forEach((card, index) => {
+        card.addEventListener("touchstart", function () {
+            descriptions[index].style.opacity = "90%";
+        });
     });
-});
-buttons.forEach((button, index) => {
-    button.addEventListener("touchend", function () {
-        descriptions[index].style.visibility = "hidden";
-    });
-});
+    buttons.forEach((button, index) => {
+        button.addEventListener("touchend", function () {
+            descriptions[index].style.opacity = "0";
+        });
+    });    
+}
 
 //Mostrar y ocultar el formulario de contacto
 const switch_button = document.getElementById("switch-button");

@@ -53,11 +53,15 @@
         }
         .projects{
             .container_cards{
-                .container{
-                    z-index: $z-tooltip;
-                }
-                .container:hover{ 
-                        visibility: visible;
+                .card{
+                    .container{
+                        .btn_card{
+                            visibility: hidden;
+                        }
+                    }
+                    .container:hover{
+                        opacity: 90%;
+                    }
                 }
             }       
         }
