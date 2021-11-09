@@ -1,0 +1,38 @@
+@media screen and (min-width: $extra-device) {
+    header{
+        i{
+            font-size: $extra-h2-font-size;
+        }
+        nav{
+            .menu{
+                .item_menu{
+                    font-size: $extra-normal-font-size;
+                }
+            }
+        }
+    }
+    main{
+        h1{
+            font-size: $extra-h1-font-size;
+        }
+        h2{
+            font-size: $extra-h2-font-size;
+        }
+        .about{
+            .container_about{
+                p{
+                    font-size: $extra-normal-font-size;
+                }
+            }
+            
+        }
+        .skills{
+            p, .skills_names{
+                font-size: $extra-normal-font-size;
+            }
+            .skills_data{
+                max-width: 50vw;
+            }
+        }
+    }
+}

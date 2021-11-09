@@ -778,6 +778,7 @@ footer {
   }
   main .about .svg_about {
     top: 30rem;
+    max-height: 58rem;
   }
   main .projects .container_cards {
     -ms-grid-columns: 1fr 1fr;
@@ -796,6 +797,30 @@ footer {
   main .contact .btn_form:hover {
     background: var(--btn_gradient);
     color: var(--color_dark);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header i {
+    font-size: 2rem;
+  }
+  header nav .menu .item_menu {
+    font-size: 1.5rem;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+  main .about .container_about p {
+    font-size: 1.5rem;
+  }
+  main .skills p, main .skills .skills_names {
+    font-size: 1.5rem;
+  }
+  main .skills .skills_data {
+    max-width: 50vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
