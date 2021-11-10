@@ -419,7 +419,7 @@ main .projects .container_cards .card {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1rem;
-  min-height: 350px;
+  min-height: 360px;
   min-width: 418px;
   position: relative;
   overflow: hidden;
