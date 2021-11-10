@@ -14,6 +14,7 @@ main{
 
     h1{
         font-size: $small-h1-font-size;
+        color: var(--color_dark);
     }
 
     h2{
@@ -188,8 +189,9 @@ main{
             position: absolute;
             left: 0;
             bottom: 0;
-            background-color: var(--color_3);
-            height: 0.25rem;
+            background-color: var(--color_2);
+            filter: brightness(50%);
+            height: 0.4rem;
             border-radius: 0.5rem;
         }
         .skills__html {
@@ -235,7 +237,7 @@ main{
                 position: relative;
                 overflow: hidden;
                 
-                img{
+                .img-project{
                     border-radius: $mb-2;
                     margin: $mb-2;
                     height: 20rem;   
@@ -259,15 +261,11 @@ main{
                         border-radius: 50%;
                         background: var(--color_2);
                         align-self: flex-end;
-                        min-width: 30px;
-                        max-width: 10%;
-                        min-height: 30px;
-                        max-height: 10%;
-                        
+                        width: 3rem;
+                        height: 3rem;
                         img{
-                            min-width: 30px;
-                            min-height: 30px;
-                            margin: 0;
+                            height: 90%;
+                            width: 90%;
                         }
                     }
                     
@@ -425,8 +423,10 @@ main{
         bottom: 3vh;
         background-color: var(--color_2);
         z-index: $z-fixed;
-        img{
+        .icon_swap{
             padding: 5px;
+            height: 90%;
+            width: 90%;
         }
     }
 
@@ -445,7 +445,5 @@ main{
         }
     }
 
-    .icon_swap{
-        font-size: 2rem;
-    }
+    
 }
